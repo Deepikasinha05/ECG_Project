@@ -23,6 +23,9 @@ flowchart LR
     E -->|Abnormal > 3| G[Buzzer Alert]
 ```
 
+
+deepika 
+
 ---
 
 ## 📁 Project Structure
@@ -68,9 +71,20 @@ ECG_Project/
 
 ## 🛠 Setup & Installation
 
-### 1. Install Python dependencies
-Ensure you are in the root directory of the project, then run:
+### 1. Set up Python Environment & Install Dependencies
+Ensure you have **Python 3.11** installed. From the root directory of the project, create a virtual environment and install the required packages:
+
 ```bash
+# 1. Create a virtual environment
+python -m venv venv
+
+# 2. Activate the virtual environment
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+# 3. Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -98,7 +112,7 @@ cd ..
 We use a custom, high-performance web dashboard over WebSockets to ensure zero page reloads.
 
 ### 1. Start the Server
-From the root directory of the project, run:
+Ensure your virtual environment is activated, then from the root directory of the project, run:
 ```bash
 python server.py
 ```
